@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom learning</title>
+    <style>
+      body {
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="tittle" class="heading">
+        Dom learning <span style="display: none">test</span>
+      </h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+        quasi.
+      </p>
+    </div>
+
+  </body>
+    <script>
+      document.getElementById("tittle");
+      //   <h1 id=​"tittle" class=​"heading">​Dom learning​</h1>
+      document.getElementById("tittle").id;
+      //   'tittle'
+      document.getElementById("tittle").class;
+      //   undefined
+      document.getElementById("tittle").className;
+      //   'heading'
+      document.getElementById("tittle").getAttribute;
+      //   ƒ getAttribute() { [native code] }
+      document.getElementById("tittle").getAttribute("id");
+      //   'tittle'
+      document.getElementById("tittle").setAttribute("class", "heading test");
+      //   undefined
+      document.getElementById("tittle").getAttribute("class");
+      //   'heading test'
+      const tittle = document.getElementById("tittle");
+      //   undefined
+      tittle.style.backgroundColor = "red";
+      //   'red'
+      tittle.style.padding = "24px";
+      //   '24px'
+      tittle.style.margin = "12px";
+      //   '12px'
+      tittle.style.borderRadius = "12px";
+      //   '12px'
+      tittle.textContent;
+      //   ("Dom learning");
+      tittle.innerHTML;
+      //   ("Dom learning");
+      tittle.innerText;
+      //   ("Dom learning");
+      /*
+    tittle.textContent
+'Dom learning test'
+    tittle.innerText
+'Dom learning'
+
+    tittle.innerHTML
+'\n        Dom learning <span style="display: none">test</span>\n      '
+    
+document.querySelector('#tittle')
+
+<h1 id=​"tittle" class=​"heading test" style=​"background-color:​ red;​ padding:​ 24px;​ margin:​ 12px;​ border-radius:​ 12px;​">​…​</h1>​
+
+document.querySelector('.heading')
+
+document. querySelector('ul')
+const myul = document. querySelector('ul')
+undefined
+
+myul.querySelector( 'li ' )
+const turnGreen = myul.querySelector( 'li')
+undefined
+turnGreen
+
+============================......>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.........
+node list look like aaray but its differ form array 
+here you can aply for each
+
+HTMLcolledction can do for each firstly we need to convert into Array then we can manuplaate easily
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>........................>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>......................
+    */
+    </script>
+</html>
